@@ -1,0 +1,130 @@
+body
+{
+    background-color: #222233;
+    font: 2em / 2 "Times New Roman",Times,serif;
+    color:#A8D4FF;
+}
+
+.section-trivia
+{
+    height:25em;
+    width: 40em;
+    margin:0;
+    padding:0;
+    position:relative;
+}
+
+.section-friends
+{
+    width:18em;
+    height:5em;
+    margin:.3em;
+    text-align:center;
+}
+
+.div-answers
+{
+    position:absolute;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:5em 5em;
+    width:40em;
+    bottom: 3em;
+}
+
+h1
+{
+    padding:0;
+    margin:0;
+    text-align:center;
+}
+
+p
+{
+    text-align:center;
+    margin-right:0;
+}
+
+.seconds_left
+{
+    position:absolute;
+    top:7em;
+    left:19.5em;
+}
+
+.p-points
+{
+    display:flex;
+    flex-direction:column;
+    margin-top:auto;
+    padding:0;
+    margin:0;
+}
+
+div
+{
+    text-align:center;
+    line-height:4em;
+    word-wrap:break-word;
+    
+}
+.answers-hover:hover
+{
+    box-shadow: 0.1em 0.1em 0.1em #A8FFB1;
+    width: 19em;
+    height: 4.6em;
+    color:#A8FFB1;
+}
+
+.friends-hover:hover
+{
+    box-shadow: 0.1em 0.1em #A8FFB1, -0.1em -0.1em 0.1em #A8FFB1;
+}
+
+.img-help
+{
+    display:inline-block;
+    width: 3em;
+    height: 3em;
+    float:right;
+    padding-left:.1em;
+    padding-right:.1em;
+
+}
+
+.img-friends
+{
+    width:3em;
+    height:3em;
+    float:left;
+    margin:.2em;
+    padding-left:.1em;
+    padding-right:.1em;
+}
+
+aside
+{
+    display:flex;
+    flex-direction:column;
+    float:right;
+    justify-content:center;
+
+}
+
+
+.border
+{   
+    border-style: groove;
+    border-width: 0.1em;
+    background-color: #171721;
+    border-radius: 0.4em;
+}
+
+.border-answers
+{
+    border-style: groove;
+    border-width: 0.1em;
+    background-color: #171721;
+    border-radius: 0.4em;
+    margin:.3em;
+}
