@@ -1,11 +1,11 @@
 <?php
-require_once './Controllers/Database.php';
+require_once './utils/Database.php';
 session_start();
 
 $db = new database('localhost', 'root', 'root', 'gamegang', 'utf8');
 
 if (isset($_GET['aid'])) {
-    $query = "UPDATE trivia_answers SET approved=1 WHERE id=?";
+    $query = "DELETE FROM trivia_answers WHERE id=?";
     $stmt = $db->conn->prepare($query);
     $stmt->bind_param('i', $_GET['aid']);
     $stmt->execute();
@@ -14,7 +14,7 @@ if (isset($_GET['aid'])) {
     exit();
 }
 if (isset($_GET['gid'])) {
-    $query = "UPDATE games SET approved=1 WHERE id=?";
+    $query = "DELETE FROM games WHERE id=?";
     $stmt = $db->conn->prepare($query);
     $stmt->bind_param('i', $_GET['gid']);
     $stmt->execute();
@@ -23,7 +23,12 @@ if (isset($_GET['gid'])) {
     exit();
 }
 if (isset($_GET['qid'])) {
-    $query = "UPDATE trivia SET approved=1 WHERE id=?";
+    $query = "DELETE FROM trivia_answers WHERE id_trivia=?";
+    $stmt = $db->conn->prepare($query);
+    $stmt->bind_param('i', $_GET['qid']);
+    $stmt->execute();
+
+    $query = "DELETE FROM trivia WHERE id=?";
     $stmt = $db->conn->prepare($query);
     $stmt->bind_param('i', $_GET['qid']);
     $stmt->execute();

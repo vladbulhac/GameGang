@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-require_once './Controllers/Database.php';
+require_once './utils/Database.php';
 
 $db = new database('localhost', 'root', 'root', 'gamegang', 'utf8');
 

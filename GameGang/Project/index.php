@@ -1,6 +1,6 @@
 <?php
-require_once './Controllers/Database.php';
-require_once './Controllers/TriviaGenerator.php';
+require_once './utils/Database.php';
+require_once './utils/TriviaGenerator.php';
 
 session_start();
 

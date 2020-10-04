@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once './Controllers/database.php';
+require_once './utils/database.php';
 
 $db = new database('localhost', 'root', 'root', 'gamegang', 'utf8');
 ?><!DOCTYPE html>

@@ -1,5 +1,5 @@
 <?php
-require_once './Controllers/Database.php';
+require_once './utils/Database.php';
 session_start();
 $db = new database('localhost', 'root', 'root', 'gamegang', 'utf8');
 ?><!DOCTYPE html>
