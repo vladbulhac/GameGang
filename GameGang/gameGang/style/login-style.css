@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ABeeZee';
+}
+body{
+    background-color: #e0e0e0;
+}
+.wrapper{
+    margin:0 auto;
+    width: 1000px;
+ }
+ .useless{
+     margin:0;
+     width:100%;
+     height: 300px;
+     background-color:#d8d8d8;
+     overflow:hidden;
+     max-width:100%;
+     box-shadow: .5px .5px 5px #24252A;
+ }
+ .useless img{
+     max-width:initial;
+ }
+ .formbox{
+     box-shadow: 2px 2px 5px #24252A;
+     background-color:#24252A;
+     position: relative;
+     display:block;
+     top:-100px;
+     left:150px;
+     height:500px;
+     width: 600px;
+     color:white;
+     padding: 20px;
+ }
+ .formbox form{
+     position: absolute;
+top:70px;
+ }
+ .formbox form input{
+
+     width:550px;
+     height:50px;
+ }
+ .formbox form label{
+     font-size: 20px;
+ }
+ .button1 {
+    position:absolute;
+    top:220px;
+    width:550px;
+   display: inline-block;
+   border-radius: 4px;
+   background-color: #d8d8d8;
+   border: none;
+   color: #24252A;
+   text-align: center;
+   font-size: 28px;
+   padding: 5px;
+   height: 50px;
+   transition: all 0.5s;
+   cursor: pointer;
+   margin: 5px;
+ }
+ 
+ .button1 span {
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.5s;
+ }
+ 
+ .button1 span:after {
+   content: '\00bb';
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   right: -20px;
+   transition: 0.5s;
+ }
+
+ .button1:hover {
+   background-color:#ff3333;
+   color:#d8d8d8;
+ }
+ 
+ .button1:hover span {
+   padding-right: 25px;
+   color:#d8d8d8;
+ }
+ 
+ .button1:hover span:after {
+   opacity: 1;
+   right: 0;
+ }
+
+ .button2 {
+    position:absolute;
+    top:350px;
+    width:550px;
+   display: inline-block;
+   border-radius: 4px;
+   background-color:#ff3333;
+   border: none;
+   color:#d8d8d8;
+   text-align: center;
+   font-size: 28px;
+   padding: 5px;
+   height: 50px;
+   transition: all 0.5s;
+   cursor: pointer;
+   margin: 5px;
+ }
+ 
+ .button2 span {
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.5s;
+ }
+ 
+ .button2 span:after {
+   content: '\00bb';
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   right: -20px;
+   transition: 0.5s;
+ }
+ .button2:hover{
+   background-color: #d8d8d8;
+   color: #24252A;
+ }
+ 
+ .button2:hover span {
+   padding-right: 25px;
+   color: #24252A;
+ }
+ .button2:hover span a{
+    color: #24252A;
+ }
+ 
+ .button2:hover span:after {
+   opacity: 1;
+   right: 0;
+ }
+
+ .button3 {
+    position:absolute;
+    top:420px;
+    width:150px;
+    left:420px;
+   display: inline-block;
+   border-radius: 4px;
+   background-color: #d8d8d8;
+   border: none;
+   color: #24252A;
+   text-align: center;
+   font-size: 28px;
+   padding: 5px;
+   height: 50px;
+   transition: all 0.5s;
+   cursor: pointer;
+   margin: 5px;
+ }
+ 
+ .button3 span {
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.5s;
+ }
+ 
+ .button3 span:after {
+   content: '\00bb';
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   right: -20px;
+   transition: 0.5s;
+ }
+ .button3:hover{
+   background-color:#ff3333;
+   color:#d8d8d8;
+ }
+ 
+ .button3:hover span {
+   padding-right: 25px;
+   color:#d8d8d8;
+ }
+ 
+ .button3:hover span:after {
+   opacity: 1;
+   right: 0;
+ }
+
+ .formbox p{
+     position:absolute;
+     top:440px;
+     font-size:30px;
+ }
+
+  /* top menu start*/
+.top-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #24252A;
+}
+
+.dropdown{
+    position:relative;
+}
+.dropdown-content{
+    display:none;
+    position:absolute;
+    background-color:#24252A;
+    min-width:160px;
+    box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1;
+}
+.dropdown-content a{
+    color:white;
+    padding:12px 16px;
+    text-decoration:none;
+    display:block;
+}
+.dropdown-content a:hover{
+    background-color:#e0e0e0;
+}
+.dropdown:hover .dropdown-content{display:block;}
+
+
+.nav_links{
+list-style:none;
+}
+.nav_links li{
+display:inline-block;
+padding: 0px 20px;
+}
+.nav_links li a{
+transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover{
+color: #0088a9;
+}
+.nav_links li form{
+position: absolute;
+left: 1500px;
+top:25px;
+}
+
+li,a{
+color:#edf0f1;
+text-decoration:none;
+}
+/* top menu end*/
